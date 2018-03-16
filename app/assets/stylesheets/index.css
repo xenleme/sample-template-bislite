@@ -142,7 +142,9 @@ em, i {
 
 .thumbnails {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e8ebf1; }
 
 .thumbs {
   position: relative; }
