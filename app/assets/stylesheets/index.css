@@ -122,6 +122,9 @@ em, i {
 .uppercase {
   text-transform: uppercase; }
 
+.description, .title, .read-more, .author {
+  font-family: 'Arial', sans-serif; }
+
 .description {
   font-size: 13px;
   line-height: 20px; }
@@ -130,6 +133,13 @@ em, i {
   font-size: 0.85em;
   font-weight: bold;
   margin-left: 10px; }
+
+.title-icon {
+  color: #2aacc8;
+  margin-right: 15px; }
+
+.section-header {
+  margin-bottom: 16px; }
 
 .logo {
   display: inline-block;
@@ -166,6 +176,23 @@ em, i {
     .actions a:last-child {
       margin-right: 0; }
 
+.read-more {
+  margin-top: 10px; }
+  .read-more a {
+    color: #2aacc8;
+    font-size: 0.7em; }
+    .read-more a:hover .fa-angle-right {
+      transform: scale(1.5); }
+    .read-more a .fa-angle-right {
+      color: black;
+      transition: .1s ease-in; }
+
+.author {
+  display: inline-block;
+  font-size: 0.7em;
+  margin-top: 20px;
+  padding-bottom: 13px; }
+
 .slider {
   background-color: #81e4ed;
   padding: 38px 0 1px; }
@@ -178,7 +205,6 @@ em, i {
 
 .work {
   background-color: #e8ebf1;
-  font-family: 'Arial', sans-serif;
   padding: 60px 0; }
 
 .work-bl {
@@ -191,38 +217,45 @@ em, i {
   .work-item:last-child {
     margin-right: 0; }
 
-.work-item-head {
-  margin-bottom: 16px; }
-  .work-item-head .fa {
-    background-color: #2aacc8;
-    color: white;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    vertical-align: middle;
-    padding-top: 11px;
-    border-radius: 50%; }
-
-.read-more {
-  margin-top: 10px; }
-  .read-more a {
-    color: #2aacc8;
-    font-size: 0.7em; }
-    .read-more a:hover .fa-angle-right {
-      transform: scale(1.5); }
-    .read-more a .fa-angle-right {
-      color: black;
-      transition: .1s ease-in; }
+.work-item .fa-pencil, .work-item .fa-compress, .work-item .fa-bars, .work-item .fa-code {
+  background-color: #2aacc8;
+  color: white;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 11px;
+  border-radius: 50%; }
 
 .latest-works {
-  font-family: 'Arial', sans-serif;
   padding: 30px 0; }
   .latest-works .fa-mouse-pointer {
     margin-right: 15px;
-    color: #2aacc8;
     padding-bottom: 15px;
     border-bottom: 1px solid #e8ebf1; }
   .latest-works h2 {
     border-bottom: 1px solid #e8ebf1;
     padding-bottom: 15px;
     margin-bottom: 17px; }
+
+.clients-bl {
+  display: flex;
+  padding-bottom: 30px; }
+
+.testimonials, .our-clients {
+  max-width: 500px; }
+
+.testimonials {
+  padding-right: 83px; }
+
+.companies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+
+.client {
+  border: 1px solid #e8ebf1;
+  margin-bottom: 4px;
+  transition: .2s ease-in; }
+  .client:hover {
+    opacity: .5; }

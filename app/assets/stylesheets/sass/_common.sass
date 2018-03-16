@@ -15,6 +15,9 @@
 .uppercase
 	text-transform: uppercase
 
+.description, .title, .read-more, .author
+  font-family: 'Arial', sans-serif
+
 .description
   font-size: 13px
   line-height: 20px
@@ -23,6 +26,13 @@
   font-size: 0.85em
   font-weight: bold
   margin-left: 10px
+
+.title-icon
+  color: $tortoise
+  margin-right: 15px
+
+.section-header
+  margin-bottom: 16px
 
 .logo
   display: inline-block
@@ -59,3 +69,21 @@
     margin-right: 15px
     &:last-child
       margin-right: 0
+
+.read-more
+  margin-top: 10px
+  a
+    color: $tortoise
+    font-size: 0.7em
+    &:hover
+      .fa-angle-right
+        transform: scale(1.5)
+    .fa-angle-right
+      color: black
+      transition: .1s ease-in
+
+.author
+  display: inline-block
+  font-size: 0.7em
+  margin-top: 20px
+  padding-bottom: 13px
