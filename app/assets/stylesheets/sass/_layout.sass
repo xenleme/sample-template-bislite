@@ -1,0 +1,66 @@
+.container
+  max-width: 1000px
+  margin: 0 auto
+
+.header
+  background-color: $grey
+  padding: 18px 0 25px
+
+.list-item, .nav-list, .logo
+  display: inline-block
+
+.logo
+  font-family: 'Lato', sans-serif
+  font-size: 2.7em
+  .logo-link
+    color: $tortoise
+    b
+      color: black
+
+.nav
+  font-size: 0.8em
+  font-family: 'Arial', sans-serif
+  margin-top: 15px
+
+.nav-list
+  position: relative
+
+.drop-down-nav-list
+  position: absolute
+  right: -10000px
+  background-color: white
+  border-bottom: 4px solid $tortoise
+
+.drop-down-list-item
+  font-size: 0.8em
+  border-bottom: 1px solid $grey
+  a
+    display: inline-block
+    color: black
+    padding: 10px 19px 10px 9px
+    &:first-child
+      padding-top: 20px
+    &:hover
+      color: $tortoise
+
+.list-item
+  margin-right: -5px
+  padding: 8px 10px
+  border-top: 4px solid $grey
+  &:hover
+    background-color: white
+    color: $tortoise
+    padding: 8px 10px
+    border-top: 4px solid $tortoise
+    .drop-down-nav-list
+      top: 36px
+      right: 277px
+  &:last-child
+    margin-right: 0
+
+.list-item-link
+  color: black
+  padding: 8px 10px
+  transition: .1s ease-in
+  .fa-angle-down
+    padding-right: 8px
