@@ -76,6 +76,7 @@ em, i {
 .container {
   max-width: 1000px;
   margin: 0 auto;
+  padding: 0 7px;
 }
 
 .header {
@@ -115,6 +116,7 @@ em, i {
   right: -10000px;
   background-color: white;
   border-bottom: 4px solid #2aacc8;
+  z-index: 1000;
 }
 
 .drop-down-list-item {
@@ -166,4 +168,17 @@ em, i {
 
 .list-item-link .fa-angle-down {
   padding-right: 8px;
+}
+
+.slider {
+  background-color: #81e4ed;
+  padding: 38px 0 1px;
+}
+
+.bx-wrapper {
+  border: 5px solid #81e4ed;
+}
+
+.bx-prev, .bx-next {
+  display: none;
 }

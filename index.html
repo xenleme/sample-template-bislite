@@ -7,7 +7,19 @@
   <link rel="stylesheet" href="app/assets/stylesheets/index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
   <title>Sample template</title>
+
+  <script>
+    $(function(){
+      $('.bxslider').bxSlider({
+        auto: true,
+      });
+    });
+  </script>
 </head>
 <body>
   <header class="header">
@@ -44,5 +56,14 @@
       </nav>
     </div>
   </header>
+
+  <section class="slider">
+    <div class="container">
+      <ul class="bxslider">
+        <li><img src="app/assets/images/slider/slide_1.jpg" alt=""></li>
+        <li><img src="app/assets/images/slider/slide_2.jpg" alt=""></li>
+      </ul>
+    </div>
+  </section>
 </body>
 </html>
