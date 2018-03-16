@@ -32,3 +32,28 @@
     color: $tortoise
     b
       color: black
+
+.thumbnails
+  display: flex
+  justify-content: space-between
+
+.thumbs
+  position: relative
+  &:hover
+    .actions
+      left: 0
+      top: 82px
+
+.actions
+  background-color: $tortoise
+  width: 100%
+  position: absolute
+  left: -10000px
+  font-size: 1.8em
+  text-align: center
+  padding: 22px 0
+  a
+    color: white
+    margin-right: 15px
+    &:last-child
+      margin-right: 0
