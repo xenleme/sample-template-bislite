@@ -15,12 +15,15 @@
 .uppercase
 	text-transform: uppercase
 
-.description, .title, .read-more, .author
+.descripton-lg, .description, .title, .read-more, .author
   font-family: 'Arial', sans-serif
 
 .description
   font-size: 13px
   line-height: 20px
+
+.descripton-lg
+  font-size: 16px
 
 .title
   font-size: 0.85em
@@ -64,6 +67,7 @@
   font-size: 1.8em
   text-align: center
   padding: 22px 0
+  opacity: .9
   a
     color: white
     margin-right: 15px
@@ -87,3 +91,23 @@
   font-size: 0.7em
   margin-top: 20px
   padding-bottom: 13px
+
+.download-btn
+  display: inline-block
+  background-color: $blue
+  width: 530px
+  font-size: 1em
+  font-weight: bold
+  margin: 0 35px 0 70px
+  border: 1px solid $tortoise
+  border-radius: 10px
+  cursor: pointer
+  -webkit-box-shadow: inset 7px -154px 164px -83px rgba(51,177,204,1)
+  -moz-box-shadow: inset 7px -154px 164px -83px rgba(51,177,204,1)
+  box-shadow: inset 4px -27px 61px -24px #33b1cc
+  transition: .2s ease-in
+  &:hover
+    background-color: lighten($blue, 15%)
+  .fa-download
+    margin-right: 10px
+    color: white

@@ -66,7 +66,7 @@ em, i {
 
 .drop-down-nav-list {
   position: absolute;
-  right: -10000px;
+  top: -10000px;
   background-color: white;
   border-bottom: 4px solid #2aacc8;
   z-index: 1000; }
@@ -122,12 +122,15 @@ em, i {
 .uppercase {
   text-transform: uppercase; }
 
-.description, .title, .read-more, .author {
+.descripton-lg, .description, .title, .read-more, .author {
   font-family: 'Arial', sans-serif; }
 
 .description {
   font-size: 13px;
   line-height: 20px; }
+
+.descripton-lg {
+  font-size: 16px; }
 
 .title {
   font-size: 0.85em;
@@ -169,7 +172,8 @@ em, i {
   left: -10000px;
   font-size: 1.8em;
   text-align: center;
-  padding: 22px 0; }
+  padding: 22px 0;
+  opacity: .9; }
   .actions a {
     color: white;
     margin-right: 15px; }
@@ -192,6 +196,26 @@ em, i {
   font-size: 0.7em;
   margin-top: 20px;
   padding-bottom: 13px; }
+
+.download-btn {
+  display: inline-block;
+  background-color: #7be0ea;
+  width: 530px;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0 35px 0 70px;
+  border: 1px solid #2aacc8;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-box-shadow: inset 7px -154px 164px -83px #33b1cc;
+  -moz-box-shadow: inset 7px -154px 164px -83px #33b1cc;
+  box-shadow: inset 4px -27px 61px -24px #33b1cc;
+  transition: .2s ease-in; }
+  .download-btn:hover {
+    background-color: #bdf0f5; }
+  .download-btn .fa-download {
+    margin-right: 10px;
+    color: white; }
 
 .slider {
   background-color: #81e4ed;
@@ -240,7 +264,7 @@ em, i {
 
 .clients-bl {
   display: flex;
-  padding-bottom: 30px; }
+  margin-bottom: 40px; }
 
 .testimonials, .our-clients {
   max-width: 500px; }
@@ -259,3 +283,10 @@ em, i {
   transition: .2s ease-in; }
   .client:hover {
     opacity: .5; }
+
+.download {
+  display: flex;
+  background-color: #e8fcfe;
+  padding: 37px 0 37px 30px;
+  border: 1px solid #7be0ea;
+  margin-bottom: 40px; }
