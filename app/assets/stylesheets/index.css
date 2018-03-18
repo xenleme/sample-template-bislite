@@ -55,7 +55,7 @@ em, i {
 .container {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 7px;
+  padding: 0 15px;
 }
 
 .header {
@@ -146,6 +146,7 @@ em, i {
 .top-footer {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 40px;
   padding-top: 15px;
 }
@@ -349,7 +350,7 @@ em, i {
   background-color: #2aacc8;
   width: 100%;
   position: absolute;
-  left: -10000px;
+  top: -10000px;
   font-size: 1.8em;
   text-align: center;
   padding: 22px 0;
@@ -508,4 +509,85 @@ em, i {
   background-color: #e8fcfe;
   padding: 37px 0 37px 30px;
   border: 1px solid #7be0ea;
+}
+
+@media (max-width: 821px) {
+  .header {
+    text-align: center;
+  }
+  .logo {
+    display: block;
+  }
+  .nav {
+    float: none;
+  }
+}
+
+@media (max-width: 676px) {
+  .list-item-link .fa-angle-down {
+    display: none;
+  }
+  .drop-down-nav-list {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  .nav {
+    font-size: 0.6em;
+  }
+}
+
+@media (max-width: 750px) {
+  .work-bl {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .work-item {
+    margin: 0 0 30px 0;
+  }
+  .work-item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 990px) {
+  .thumbnails {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 450px) {
+  .testimonials {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 750px) {
+  .download {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 27px 23px;
+  }
+  .descripton-lg {
+    margin-bottom: 20px;
+  }
+  .download-btn {
+    margin: 0;
+    width: 36%;
+    padding: 12px 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .download-btn {
+    width: 50%;
+  }
+}
+
+@media (max-width: 450px) {
+  .footer-item {
+    margin-bottom: 30px;
+  }
 }
